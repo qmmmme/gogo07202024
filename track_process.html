@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Process Tracking</title>
+	<link rel="stylesheet" type="text/css" href="track_process.css">
+	
+</head>
+<body>
+	<header>
+		<h1>Go Go Workout</h1>
+		<nav>
+			<!-- create a navigation-->
+			<h2>Process Tracking</h2>
+	
+
+			<a href="workout_playlists.html">Workout Playlist</a> &nbsp;
+			<a href="track_process.html" class="active">Process Tracking</a> &nbsp;
+			<a href="recipes.html">Workout Recipes</a> &nbsp;
+			<a href="music_playlists.html">Music Playlists</a> &nbsp;
+			<a href="homepage.html">Home Page</a> &nbsp;
+			
+		</nav>	
+	</header>
+	
+	<main>
+		<div id="formdiv">
+		<form>
+			<h3>Enter your weight progress below!</h3>
+			<input id="weight_measure" type="number" step="0.01"/>
+			<br>
+			
+			<input type="button" value="Submit Weight" onclick="addWeight()">
+			<input type="button" value="Show past weigths" onclick="displayW()">
+			<div id="displayDiv">
+				<h3>Your last 10 weigh ins:</h3>
+				<ol id="display"></ol>
+			  </div>
+		  </form>
+		</div>
+			  <!--following upload image code from: https://www.webtrickshome.com/forum/how-to-display-uploaded-image-in-html-using-javascript-->
+			  <div id="fileUpload">
+			  <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+				<button id="uploadButt"><label for="file" style="cursor: pointer;">Upload Image</label></button> <br><br>
+				<div class="gallery">
+					<!--How would they update like the array?-->
+					
+					<div><img id="output0"  width="200" class="pics"></div>
+					<div><img id="output1"  width="200" class="pics"></div>
+					<div><img id="output2"  width="200" class="pics" ></div>
+					<div><img id="output3"  width="200" class="pics" ></div> 
+					<div><img id="output4"  width="200" class="pics"></div> 
+					<div><img id="output5"  width="200" class="pics"></div> 
+					<div><img id="output6"  width="200" class="pics" ></div> 
+					<div><img id="output7"  width="200" class="pics" ></div>
+					
+				</div>
+			</div>
+
+		
+	</main>
+	<footer>
+			
+		<div class="contact">
+			<p id="contact">Contact Us:</p>
+			<ul>
+				<li><a href="mailto:gogo.workout.service@gmail.com">Email to: gogo.workout.service@gmail.com</a></li>
+				<li><a href="https://www.google.com/maps/place/University+of+North+Carolina+at+Charlotte/@35.3070973,-80.7373527,17z/data=!3m1!4b1!4m5!3m4!1s0x88541c1ad0a92357:0x6b3f67f7f19324f3!8m2!3d35.3070929!4d-80.735164">Address: 69201 University City Blvd, Charlotte, NC 28223</a></li>
+				<li><span>Call Us: </span><a href="tel:7044923892">(01) 704-492-1335</a></li>
+		   </ul>
+	   </div>	
+</footer>
+	
+	<script src="index.js"></script>
+	<script src="track_progress.js"></script>
+
+</body>
+
+</html>
